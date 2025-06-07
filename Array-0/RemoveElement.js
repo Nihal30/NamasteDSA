@@ -11,3 +11,16 @@
 // Output: 2, nums = [2,2,_,_]
 // Explanation: Your function should return k = 2, with the first two elements of nums being 2.
 // It does not matter what you leave beyond the returned k (hence they are underscores).
+
+// solution
+
+var removeElement = function(nums, val) {
+  let x = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] != val) {
+      nums[x] = nums[i];
+      x++;
+    }
+  }
+  return x;
+};
