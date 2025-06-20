@@ -1,3 +1,7 @@
+
+ // sum first n numbers
+
+
 function sum(n) {
 
     let s = 0;
